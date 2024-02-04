@@ -15,10 +15,10 @@ class Personnage:
         print(f"Force: {self.force}")
         print(f"Intelligence: {self.intelligence}")
 
-    def attaquer(self. cible):
+    def attaquer(self, cible):
         print(f"{self.nom} attaque {cible.nom}!")
         degats = self.force * 2
-        ciblesurgir_degats(degats)
+        cible.surgir_degats(degats)
 
     def subir_degats(self, degats):
         self.points_de_vie -= degats
